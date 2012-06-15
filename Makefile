@@ -1,6 +1,6 @@
 CC=clang
-CFLAGS=-I uv/include/
-LDFLAGS=uv/uv.a
+CFLAGS=-Iuv/include -std=gnu99
+LDFLAGS=uv/uv.a -pthreads -lrt -lm
 
 .PHONY: clean
 
